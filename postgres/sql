@@ -1,0 +1,32 @@
+CREATE TABLE tag (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    label VARCHAR(255) UNIQUE NOT NULL,
+    is_active BOOLEAN SET default TRUE,
+    created_at DATE DEFAULT CURRENT_DATE,
+    created_by varchar(255) NOT NULL,
+    last_updated_at DATE,
+    last_updated__by varchar(255)
+);
+
+
+CREATE TABLE post (
+	id SERIAL PRIMARY KEY,
+    title VARCHAR(255),
+    content VARCHAR(255),
+    is_active BOOLEAN default TRUE,
+    created_at DATE DEFAULT CURRENT_DATE,
+    created_by varchar(255) NOT NULL,
+    last_updated_at DATE,
+    last_updated__by varchar(255)
+);
+
+CREATE TABLE post_tag (
+	id SERIAL PRIMARY KEY,
+    post_id SERIAL,
+    tag_id SERIAL,
+    is_active BOOLEAN default TRUE,
+    created_at DATE DEFAULT CURRENT_DATE,
+    created_by varchar(255) NOT NULL,
+    last_updated_at DATE,
+    last_updated__by varchar(255)
+);
