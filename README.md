@@ -25,7 +25,8 @@ curl --location 'http://localhost:8080/api/post' \
     "tags":["add new 001", "add new 001-A"]
 }'
 ```
-![image](https://github.com/user-attachments/assets/4fe7b3d1-3de9-4372-b4d0-b17445add78a)
+![image](https://github.com/user-attachments/assets/63cd3287-55d9-4d79-bd33-35714c8056d9)
+
 
 ## API get data by id - GET /api/post/:postId
 ```
