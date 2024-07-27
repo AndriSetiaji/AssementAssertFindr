@@ -1,9 +1,19 @@
 # AssementAssertFindr
 ### tech stack:
-● Language: Golang ✔️
-● Framework: Gin ✔️
-● ORM: GORM ✔️
-● Database: PostgreSQL ✔️
+- Language: Golang ✔️
+- Framework: Gin ✔️
+- ORM: GORM ✔️
+- Database: PostgreSQL ✔️
+
+### Note
+## postgressql
+- run postgressql in local with docker compose.
+- for auth and settings already write on docker-compose.yml
+## golang
+- in this repo already include go mod and go sum for running
+- adjust file .env for connection with postgressql in local
+- can direct running with go run [your-path]/src/main.go
+- running in localhost:8080
 
 ## ERD on PostgresSql
 ![image](https://github.com/user-attachments/assets/8f1831c1-51b2-4d08-8a50-35e6da3ee62f)
